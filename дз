@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, с, result;
+    
+    printf("Расстояние от человека до реки: ");
+
+    scanf("%f", &a);
+    
+    printf("Расстояние от костра до реки: ");
+    scanf("%f", &b);
+    
+    printf("Расстояние вдоль реки: ");
+    scanf("%f", &с);
+    
+    result = sqrt(с*с + (a+b)*(a+b));
+    
+    printf("Минимальный путь: %.2f\n", result);
+    
+    return 0;
+}
